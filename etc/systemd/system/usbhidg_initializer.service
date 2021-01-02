@@ -1,0 +1,8 @@
+[Unit]
+Description=Start bridge local HID device to remote HID device.
+
+[Service]
+ExecStart=/usr/bin/usbhidg_initializer
+
+[Install]
+WantedBy=multi-user.target

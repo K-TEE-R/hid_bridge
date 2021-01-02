@@ -1,0 +1,8 @@
+[Unit]
+Description=Start bridge local HID device to remote HID device.
+
+[Service]
+ExecStart=/usr/bin/python /usr/lib/hid_bridge/hid_bridge.py
+
+[Install]
+WantedBy=multi-user.target
